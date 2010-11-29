@@ -2,3 +2,4 @@
 Baker.xcodeproj/*.mode1v3
 Baker.xcodeproj/*.pbxuser
 build/
+.sass-cache

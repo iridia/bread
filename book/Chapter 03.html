@@ -38,8 +38,15 @@
 		
 		$("li").each(function (index) {
 		
-			var latency = 100 * index;
-			$(this).fadeTo(0, 0).fadeTo(latency, 0).fadeTo(250, 1);//();
+			var latency = 100 * index + 100;
+			
+			$(this).animate({bogus:true}, latency, function () {
+			
+				$(this).addClass("visible");
+			
+			});
+			
+		//	$(this).fadeTo(0, 0).fadeTo(1, 0).fadeTo(250, 1);//();
 		
 		});
 		

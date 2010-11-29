@@ -138,6 +138,16 @@ p {
 
 	li {
 	
+		opacity: 0.01;
+		
+		@include transition(1s); 
+		
+		&.visible {
+		
+			opacity: 1;
+		
+		}
+	
 		display: inline-block;
 		width: 208px;
 		max-height: 208px;

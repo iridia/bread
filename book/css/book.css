@@ -138,6 +138,15 @@ p {
 .gallery {
   margin: -16px; }
   .gallery li {
+    opacity: 0.01;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -uu-transition: all 1s linear;
+    -icab-transition: all 1s linear;
+    -khtml-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    transition: all 1s linear;
     display: inline-block;
     width: 208px;
     max-height: 208px;
@@ -145,6 +154,8 @@ p {
     vertical-align: top;
     margin: 16px 16px;
     text-align: center; }
+    .gallery li.visible {
+      opacity: 1; }
     .gallery li a {
       margin: 0 auto;
       text-align: right;
