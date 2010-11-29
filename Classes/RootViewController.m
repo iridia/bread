@@ -269,6 +269,7 @@
 		[labelText release];
 		
 		[[self scrollView] addSubview:label];
+		label.hidden = YES;
 		[label release];
 	}
 }
@@ -407,8 +408,8 @@
 	
 	// /!\ hack to make it load at the right time and not too early
 	// source: http://stackoverflow.com/questions/1422146/webviewdidfinishload-firing-too-soon
-	//NSString *javaScript = @"<script type=\"text/javascript\">function myFunction(){return 1+1;}</script>";
-	//[webView stringByEvaluatingJavaScriptFromString:javaScript];
+	//	NSString *javaScript = @"<script type=\"text/javascript\">function myFunction(){return 1+1;}</script>";
+	//	[webView stringByEvaluatingJavaScriptFromString:javaScript];
 	
 	[self spinnerForPage:currentPageNumber isAnimating:NO]; // spinner YES
 	[self webView:webView hidden:NO animating:YES];
