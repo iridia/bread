@@ -66,7 +66,7 @@
 	[self hideStatusBar];
 	
 	// Count pages
-	self.pages = [[NSBundle mainBundle] pathsForResourcesOfType:@"html" inDirectory:@"book"];
+	self.pages = [[NSBundle mainBundle] pathsForResourcesOfType:@"html" inDirectory:@"Book"];
 	totalPages = [pages count];
 	NSLog(@"Pages in this book: %d", totalPages);
 	
