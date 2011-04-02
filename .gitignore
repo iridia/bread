@@ -1,5 +1,9 @@
 .DS_Store
 Baker.xcodeproj/*.mode1v3
+Baker.xcodeproj/*.mode2v3
+Baker.xcodeproj/*.mode1v3
 Baker.xcodeproj/*.pbxuser
+Baker.xcodeproj/xcuserdata/*.xcuserdatad
+Baker.xcodeproj/*.xcworkspace
 build/
 .sass-cache
