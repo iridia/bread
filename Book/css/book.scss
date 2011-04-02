@@ -1,0 +1,230 @@
+@import "../lib.monoSnippets/lib.monoSnippets.reset.scss";
+@import "../lib.monoSnippets/lib.monoSnippets.scss";
+
+html {
+
+	background: gray;
+	margin: 0px;
+
+}
+
+body {
+
+	font-family: "Palatino", "Geoegia", serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+#wrapper {
+
+	width: 768px - 64px;
+	margin: 0 auto;
+	padding: 32px;
+	background: white;
+	
+	min-height: 1024px - 64px;
+	
+	position: relative;
+	
+	&.dark {
+	
+		background: rgb(64, 64, 64);
+		color: rgb(192, 192, 192);
+	
+	}
+	
+}
+
+
+
+
+
+h1 {
+
+	font-family: "Helvetica Neue", "Helvetica", Georgia;
+	font-size: 1.8em;
+	text-align: left;
+	
+	margin-top: 2em;
+	margin-bottom: 1em;
+
+}
+
+
+
+
+
+h1.caption {
+
+	font-weight: 100;
+	font-size: 4em;
+	color: rgb(192, 192, 192);
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+}
+
+
+
+
+
+h2 {
+
+	font-size: 1.6em;
+	text-align: center;
+
+}
+
+img.main {
+
+	max-width: 100%;
+	height: auto;
+
+}
+
+img.left {
+
+	float: left;
+	padding: 7px 10px 0 0;
+
+}
+
+img.right {
+
+	float: right;
+	padding: 7px 0 0 10px;
+
+}
+
+
+
+
+
+p {
+
+	margin-bottom: 1.5em;
+
+}
+
+
+
+
+
+.double {
+
+	@include everyone(column-count, 2);
+	@include everyone(column-gap, 32px);
+	
+	> p:first-child {
+	
+		position: relative;
+		top: 1px;
+	
+	}
+
+}
+
+
+
+
+
+.gallery {
+
+	margin: -16px;
+
+	li {
+	
+		opacity: 0.01;
+		
+		@include transition(1s); 
+		
+		&.visible {
+		
+			opacity: 1;
+		
+		}
+	
+		display: inline-block;
+		width: 208px;
+		max-height: 208px;
+		line-height: 208px;
+		
+		vertical-align: top;
+		margin: 16px 16px;
+		text-align: center;
+		
+		a {
+		
+			margin: 0 auto;			
+			text-align: right;
+			line-height: 208px;
+			height: 208px;
+			vertical-align: middle;
+			display: inline-block;
+
+			background: black;
+			@include borderRadius(4px);
+			@include boxShadow(rgba(0, 0, 0, .35), 0px, 1px, 2px); 
+
+		}
+		
+		img {
+		
+			width: 100%;
+			height: auto;
+			max-width: auto;
+			vertical-align: middle;
+
+			@include borderRadius(4px);
+			
+			position: relative;
+			top: -1px;
+		
+		}
+	
+	}
+
+}
+
+
+
+
+
+.flooring {
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+
+}
+
+p.description.flooring {
+
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 9px;
+	text-transform: uppercase;
+
+	text-align: center;
+	padding-bottom: 2em;
+
+}
+
+
+
+
+
+.rounded {
+
+	@include borderRadius(4px);
+	-webkit-background-clip: padding-box; 
+
+}
+
+
+
